@@ -20,4 +20,4 @@ Intuitivo              Mais configurável
 Facilidade             Mais leve
 
 Um exemplo de trade-off em uma aplicação real é o aumento da complexidade em troca da alta escalabilidade no desenvolvimento do "Netflix".
-<img src="https://pbs.twimg.com/card_img/1823012764190699520/YAVmPqH2?format=jpg&name=small" alt="Netflix Architeture">
+![netflix architeture](https://pbs.twimg.com/card_img/1823012764190699520/YAVmPqH2?format=jpg&name=small) 
