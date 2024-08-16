@@ -19,7 +19,8 @@ Maior acessibilidade   Gratuito e Open Source
 Intuitivo              Mais configurável
 Facilidade             Mais leve
 
-Um exemplo de trade-off em uma aplicação real é o aumento da complexidade em troca da alta escalabilidade no desenvolvimento do "Netflix".
+Um exemplo de trade-off em uma aplicação real é o aumento da complexidade que acaba fazendo com que haja uma diminuição de performance em troca da alta escalabilidade 
+no desenvolvimento do Netflix para que milhões de deispositivos em todo o mundo consigam utilizar o serviço simultaneamente e em diferentes tipos de dispositivos.
 
 
 ![netflix architeture](https://pbs.twimg.com/card_img/1823012764190699520/YAVmPqH2?format=jpg&name=small) 
