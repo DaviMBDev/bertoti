@@ -26,4 +26,4 @@ por maios escalabilidade, pois no começo, o formato da arquitetura da Netflix e
 desse tipo de arquitetura e começaram a utilizar a arquitetura de micro-serviços.
 
 
-![netflix architeture](https://pbs.twimg.com/card_img/1823012764190699520/YAVmPqH2?format=jpg&name=small) 
+![netflix architeture](../YAVmPqH2.jpg) 
