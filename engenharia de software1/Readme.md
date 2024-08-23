@@ -27,3 +27,73 @@ desse tipo de arquitetura e começaram a utilizar a arquitetura de micro-serviç
 
 
 ![netflix architeture](../YAVmPqH2.jpg) 
+
+
+Filme
+public class Filme {
+
+    private int anoLancamento;
+    private int duracao;
+
+    public Filme(int notaCritica, int anoLancamento) {
+        this.duracao = notaCritica;
+        this.anoLancamento = anoLancamento;
+    }
+
+    public int getDuracao() {
+        return duracao;
+    }
+
+    public void setDuracao(int duracao) {
+        this.duracao = duracao;
+    }
+
+    public int getAnoLancamento() {
+        return anoLancamento;
+    }
+
+    public void setAnoLancamento(int anoLancamento) {
+        this.anoLancamento = anoLancamento;
+    }
+}
+
+
+Assistidos
+import java.util.ArrayList;
+import java.util.List;
+
+public class ColecaoDeFilmes {
+    private List<Filme> filmesAssistidos;
+    
+    public ColecaoDeFilmes() {
+        this.filmesAssistidos = new ArrayList<>();
+    }
+
+    public void adicionarFilme(Filme filme) {
+        filmesAssistidos.add(filme);
+    }
+
+    public List<Filme> listarFilmes() {
+        return new ArrayList<>(filmesAssistidos);
+    }
+
+    public List<Filme> buscarFilmesPorAno(int ano) {
+        List<Filme> encontrados = new ArrayList<>();
+        for (Filme filme : filmesAssistidos) {
+            if (filme.getAnoLancamento() == ano) {
+                encontrados.add(filme);
+            }
+        }
+        return encontrados;
+    }
+
+    public List<Filme> buscarFilmesPorDuracao(int duracao) {
+        List<Filme> encontrados = new ArrayList<>();
+        for (Filme filme : filmesAssistidos) {
+            if (filme.getDuracao() == duracao) {
+                encontrados.add(filme);
+            }
+        }
+        return encontrados;
+    }
+}
