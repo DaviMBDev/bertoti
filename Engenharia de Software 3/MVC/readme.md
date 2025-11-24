@@ -26,33 +26,6 @@ A relação entre a Interface e o Processamento é definida pelo padrão **Strat
 
 ### 1. Model (O Detentor do Estado)
 Representa o núcleo da aplicação: os dados e a lógica de negócio.
-* **Comportamento:** Quando seu estado muda, ele notifica automaticamente todos os "assinantes" registrados, sem saber quem são.
-
-### 2. View (A Interface Visual)
-É a representação visual dos dados para o usuário.
-* **Comportamento:** A View se registra no Model. Ao receber uma notificação, ela consulta o estado atual do Model e se redesenha. Isso permite múltiplas interfaces (ex: gráfico, tabela, alerta) reagindo ao mesmo dado simultaneamente.
-
-### 3. Controller (O Processador de Entrada)
-Gerencia a interação do usuário e orquestra o fluxo.
-* **Comportamento:** Intercepta o comando do usuário, aplica validações (regras de entrada) e invoca a alteração no Model. Isso protege o Model de receber dados "sujos" diretamente da View.
-
----
-
-## 🔄 O Fluxo de Execução
-
-O ciclo de vida de uma interação no MVC ocorre na seguinte ordem:
-
-1.  **Interação:** O usuário aciona um comando na interface (ex: clica em "Alterar Temperatura").
-2.  **Estratégia (Controller):** O Controller captura o evento e decide como processá-lo (valida se é permitido).
-3.  **Alteração:** Se válido, o Controller invoca a mudança de estado no Model.
-4.  **Notificação (Observer):** O Model atualiza seu estado e dispara o aviso para os ouvintes.
-5.  **Atualização:** As Views recebem o aviso, buscam o novo valor e atualizam a tela.
----
-
-## ⚙️ Estrutura e Responsabilidades
-
-### 1. Model (O Detentor do Estado)
-Representa o núcleo da aplicação: os dados e a lógica de negócio.
 
 * **Papel no Padrão Observer:** Atua como o **Sujeito** (*Subject*).
 * **Comportamento:** O Model **não conhece** a interface gráfica. Quando seu estado muda, ele notifica automaticamente todos os "assinantes" registrados, sem se importar com quem são ou o que farão com a informação.
